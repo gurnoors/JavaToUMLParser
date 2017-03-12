@@ -20,7 +20,6 @@ public class MyVisitor extends VoidVisitorAdapter<Void> {
 	// public void visit(MethodDeclaration n, Void arg) {
 	// /* here you can access the attributes of the method.
 	// this method will be called for all methods in this
-	// CompilationUnit, including inner class methods */
 
 	@Override
 	public void visit(ObjectCreationExpr n, Void arg) {
