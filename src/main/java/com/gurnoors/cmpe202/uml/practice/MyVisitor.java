@@ -46,7 +46,6 @@ public class MyVisitor extends VoidVisitorAdapter<Void> {
 
 	@Override
 	public void visit(ClassOrInterfaceDeclaration n, Void arg) {
-//		n.getImplementedTypes();
 		NodeList<BodyDeclaration<?>> members = n.getMembers();
 		for(BodyDeclaration<?> member : members){
 			if( member instanceof FieldDeclaration){
