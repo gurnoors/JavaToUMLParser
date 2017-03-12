@@ -40,7 +40,6 @@ public class MyVisitor extends VoidVisitorAdapter<Void> {
 	
 	@Override
 	public void visit(JavadocComment n, Void arg) {
-		// TODO Auto-generated method stub
 		System.out.println(n);
 		super.visit(n, arg);
 	}
@@ -48,7 +47,6 @@ public class MyVisitor extends VoidVisitorAdapter<Void> {
 	@Override
 	public void visit(ClassOrInterfaceDeclaration n, Void arg) {
 //		n.getImplementedTypes();
-//		n.getExtendedTypes();
 		NodeList<BodyDeclaration<?>> members = n.getMembers();
 		for(BodyDeclaration<?> member : members){
 			if( member instanceof FieldDeclaration){
