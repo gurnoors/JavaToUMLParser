@@ -18,7 +18,6 @@ import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 public class MyVisitor extends VoidVisitorAdapter<Void> {
 	// @Override
 	// public void visit(MethodDeclaration n, Void arg) {
-	// /* here you can access the attributes of the method.
 
 	@Override
 	public void visit(ObjectCreationExpr n, Void arg) {
