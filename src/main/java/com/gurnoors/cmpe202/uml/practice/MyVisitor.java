@@ -17,7 +17,6 @@ import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 
 public class MyVisitor extends VoidVisitorAdapter<Void> {
 	// @Override
-	// public void visit(MethodDeclaration n, Void arg) {
 
 	@Override
 	public void visit(ObjectCreationExpr n, Void arg) {
