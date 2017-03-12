@@ -10,6 +10,7 @@ import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.ast.body.ConstructorDeclaration;
 import com.github.javaparser.ast.body.FieldDeclaration;
 import com.github.javaparser.ast.body.MethodDeclaration;
+import com.github.javaparser.ast.comments.JavadocComment;
 import com.github.javaparser.ast.expr.MemberValuePair;
 import com.github.javaparser.ast.expr.ObjectCreationExpr;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
@@ -35,6 +36,13 @@ public class MyVisitor extends VoidVisitorAdapter<Void> {
 	public void visit(ImportDeclaration n, Void arg) {
 		super.visit(n, arg);
 		
+	}
+	
+	@Override
+	public void visit(JavadocComment n, Void arg) {
+		// TODO Auto-generated method stub
+		System.out.println(n);
+		super.visit(n, arg);
 	}
 
 	@Override
