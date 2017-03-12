@@ -21,7 +21,6 @@ public class MyVisitor extends VoidVisitorAdapter<Void> {
 	// /* here you can access the attributes of the method.
 	// this method will be called for all methods in this
 	// CompilationUnit, including inner class methods */
-	// System.out.println(n.getName());
 
 	@Override
 	public void visit(ObjectCreationExpr n, Void arg) {
