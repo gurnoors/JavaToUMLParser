@@ -1,9 +1,6 @@
 package com.gurnoors.cmpe202.uml.practice;
 
-import java.util.List;
-
 import com.github.javaparser.ast.ImportDeclaration;
-import com.github.javaparser.ast.Node;
 import com.github.javaparser.ast.NodeList;
 import com.github.javaparser.ast.body.BodyDeclaration;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
@@ -11,7 +8,6 @@ import com.github.javaparser.ast.body.ConstructorDeclaration;
 import com.github.javaparser.ast.body.FieldDeclaration;
 import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.comments.JavadocComment;
-import com.github.javaparser.ast.expr.MemberValuePair;
 import com.github.javaparser.ast.expr.ObjectCreationExpr;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 
@@ -33,6 +29,7 @@ public class MyVisitor extends VoidVisitorAdapter<Void> {
 	@Override
 	public void visit(JavadocComment n, Void arg) {
 		System.out.println(n);
+		System.out.println(n.getContent());
 		super.visit(n, arg);
 	}
 
