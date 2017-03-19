@@ -6,6 +6,7 @@ import com.github.javaparser.ast.body.AnnotationDeclaration;
 import com.github.javaparser.ast.body.BodyDeclaration;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.ast.body.ConstructorDeclaration;
+import com.github.javaparser.ast.body.EnumDeclaration;
 import com.github.javaparser.ast.body.FieldDeclaration;
 import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.comments.JavadocComment;
@@ -114,6 +115,12 @@ public class MyVisitor extends VoidVisitorAdapter<Void> {
 	
 	@Override
 	public void visit(WhileStmt n, Void arg) {
+		// TODO Auto-generated method stub
+		super.visit(n, arg);
+	}
+	
+	@Override
+	public void visit(EnumDeclaration n, Void arg) {
 		// TODO Auto-generated method stub
 		super.visit(n, arg);
 	}
