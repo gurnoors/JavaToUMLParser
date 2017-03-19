@@ -9,8 +9,10 @@ import com.github.javaparser.ast.body.FieldDeclaration;
 import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.comments.JavadocComment;
 import com.github.javaparser.ast.expr.ArrayAccessExpr;
+import com.github.javaparser.ast.expr.BinaryExpr;
 import com.github.javaparser.ast.expr.MemberValuePair;
 import com.github.javaparser.ast.expr.ObjectCreationExpr;
+import com.github.javaparser.ast.stmt.AssertStmt;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 
 public class MyVisitor extends VoidVisitorAdapter<Void> {
@@ -59,6 +61,18 @@ public class MyVisitor extends VoidVisitorAdapter<Void> {
 	@Override
 	public void visit(ArrayAccessExpr n, Void arg) {
 		System.out.println(n);
+		super.visit(n, arg);
+	}
+	
+	@Override
+	public void visit(AssertStmt n, Void arg) {
+		// TODO Auto-generated method stub
+		super.visit(n, arg);
+	}
+	
+	@Override
+	public void visit(BinaryExpr n, Void arg) {
+		// TODO Auto-generated method stub
 		super.visit(n, arg);
 	}
 }
