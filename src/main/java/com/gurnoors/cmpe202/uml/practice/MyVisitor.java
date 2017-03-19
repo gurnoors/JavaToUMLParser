@@ -13,6 +13,7 @@ import com.github.javaparser.ast.expr.BinaryExpr;
 import com.github.javaparser.ast.expr.MemberValuePair;
 import com.github.javaparser.ast.expr.ObjectCreationExpr;
 import com.github.javaparser.ast.stmt.AssertStmt;
+import com.github.javaparser.ast.stmt.TryStmt;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 
 public class MyVisitor extends VoidVisitorAdapter<Void> {
@@ -72,6 +73,12 @@ public class MyVisitor extends VoidVisitorAdapter<Void> {
 	
 	@Override
 	public void visit(BinaryExpr n, Void arg) {
+		// TODO Auto-generated method stub
+		super.visit(n, arg);
+	}
+	
+	@Override
+	public void visit(TryStmt n, Void arg) {
 		// TODO Auto-generated method stub
 		super.visit(n, arg);
 	}
