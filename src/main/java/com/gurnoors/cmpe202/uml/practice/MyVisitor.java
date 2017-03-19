@@ -2,6 +2,7 @@ package com.gurnoors.cmpe202.uml.practice;
 
 import com.github.javaparser.ast.ImportDeclaration;
 import com.github.javaparser.ast.NodeList;
+import com.github.javaparser.ast.body.AnnotationDeclaration;
 import com.github.javaparser.ast.body.BodyDeclaration;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.ast.body.ConstructorDeclaration;
@@ -17,6 +18,7 @@ import com.github.javaparser.ast.stmt.AssertStmt;
 import com.github.javaparser.ast.stmt.CatchClause;
 import com.github.javaparser.ast.stmt.ForeachStmt;
 import com.github.javaparser.ast.stmt.TryStmt;
+import com.github.javaparser.ast.stmt.WhileStmt;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 
 public class MyVisitor extends VoidVisitorAdapter<Void> {
@@ -100,6 +102,18 @@ public class MyVisitor extends VoidVisitorAdapter<Void> {
 	
 	@Override
 	public void visit(ForeachStmt n, Void arg) {
+		// TODO Auto-generated method stub
+		super.visit(n, arg);
+	}
+	
+	@Override
+	public void visit(AnnotationDeclaration n, Void arg) {
+		// TODO Auto-generated method stub
+		super.visit(n, arg);
+	}
+	
+	@Override
+	public void visit(WhileStmt n, Void arg) {
 		// TODO Auto-generated method stub
 		super.visit(n, arg);
 	}
