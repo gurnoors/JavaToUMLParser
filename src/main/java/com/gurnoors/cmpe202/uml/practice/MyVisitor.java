@@ -15,6 +15,7 @@ import com.github.javaparser.ast.expr.MemberValuePair;
 import com.github.javaparser.ast.expr.ObjectCreationExpr;
 import com.github.javaparser.ast.stmt.AssertStmt;
 import com.github.javaparser.ast.stmt.CatchClause;
+import com.github.javaparser.ast.stmt.ForeachStmt;
 import com.github.javaparser.ast.stmt.TryStmt;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 
@@ -93,6 +94,12 @@ public class MyVisitor extends VoidVisitorAdapter<Void> {
 	
 	@Override
 	public void visit(CharLiteralExpr n, Void arg) {
+		// TODO Auto-generated method stub
+		super.visit(n, arg);
+	}
+	
+	@Override
+	public void visit(ForeachStmt n, Void arg) {
 		// TODO Auto-generated method stub
 		super.visit(n, arg);
 	}
