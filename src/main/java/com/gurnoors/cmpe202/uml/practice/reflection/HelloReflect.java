@@ -20,7 +20,6 @@ public class HelloReflect {
 		    	System.out.println(parameter.toString());
 		    }
 		    
-		    System.out.println(method.invoke(null, null));
 		  
 		    System.out.println("--------"+method.getName() + " ends\n");
 		}
