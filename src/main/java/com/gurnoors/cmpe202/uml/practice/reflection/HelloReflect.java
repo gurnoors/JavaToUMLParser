@@ -15,7 +15,10 @@ public class HelloReflect {
 		    System.out.println(method.getParameterCount());
 		    for(Parameter parameter : method.getParameters()){
 		    	System.out.println("Param-->");
+		    	System.out.println(parameter.toString());
 		    }
+		  
+		   
 		}
 	}
 
