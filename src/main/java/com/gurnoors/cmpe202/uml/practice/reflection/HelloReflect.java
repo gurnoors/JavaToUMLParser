@@ -11,6 +11,7 @@ public class HelloReflect {
 
 		for(Method method : methods){
 		    System.out.println("method = " + method.getName());
+		    System.out.println(method.getParameterCount());
 		}
 	}
 
