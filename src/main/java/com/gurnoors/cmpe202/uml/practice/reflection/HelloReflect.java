@@ -17,6 +17,7 @@ public class HelloReflect {
 		    	System.out.println("Param-->");
 		    	System.out.println(parameter.toString());
 		    }
+		    System.out.println(method.getModifiers());
 		  
 		    System.out.println("--------"+method.getName() + " ends\n");
 		}
