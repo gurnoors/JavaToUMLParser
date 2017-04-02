@@ -1,5 +1,6 @@
 package com.gurnoors.cmpe202.uml.practice.reflection;
 
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 
@@ -7,7 +8,7 @@ import com.gurnoors.cmpe202.uml.practice.HelloJavaParser;
 
 public class HelloReflect {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 		Method[] methods = HelloJavaParser.class.getMethods();
 
 		for(Method method : methods){
@@ -19,6 +20,7 @@ public class HelloReflect {
 		    	System.out.println(parameter.toString());
 		    }
 		    
+		    System.out.println(method.invoke(null, null));
 		  
 		    System.out.println("--------"+method.getName() + " ends\n");
 		}
