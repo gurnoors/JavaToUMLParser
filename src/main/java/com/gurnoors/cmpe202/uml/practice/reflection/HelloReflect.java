@@ -1,5 +1,6 @@
 package com.gurnoors.cmpe202.uml.practice.reflection;
 
+import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
@@ -23,6 +24,10 @@ public class HelloReflect {
 		    
 		    
 		    System.out.println(method.getModifiers());
+		}
+		
+		for(Annotation an : HelloJavaParser.class.getAnnotations()){
+			System.out.println(an);
 		}
 	}
 	
