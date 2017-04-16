@@ -25,7 +25,6 @@ public class HelloReflect {
 		    }
 		    
 		    
-		    System.out.println("------end method "+method.getName());
 		    System.out.println(method.getModifiers());
 		}
 		
