@@ -6,6 +6,8 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 
+import com.github.javaparser.ast.ImportDeclaration;
+import com.github.javaparser.symbolsolver.model.declarations.InterfaceDeclaration;
 import com.gurnoors.cmpe202.uml.practice.HelloJavaParser;
 
 public class HelloReflect {
@@ -33,6 +35,10 @@ public class HelloReflect {
 		
 		for(Constructor<?> c : HelloJavaParser.class.getConstructors()){
 			System.out.println(c);
+		}
+		
+		for(Class<?> i : HelloJavaParser.class.getInterfaces()){
+			System.out.println(i);
 		}
 	}
 	
