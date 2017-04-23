@@ -1,5 +1,6 @@
 package com.gurnoors.cmpe202.uml.practice;
 
+import java.io.BufferedWriter;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
@@ -15,6 +16,7 @@ public class HelloJavaParser {
 		CompilationUnit cUnit = JavaParser.parse(inputStream);
 		MyVisitor visitor = new MyVisitor();
 		visitor.visit(cUnit, null);
+		
 	}
 
 }
