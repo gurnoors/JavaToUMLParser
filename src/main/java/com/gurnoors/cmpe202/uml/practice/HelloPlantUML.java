@@ -11,9 +11,14 @@ public class HelloPlantUML {
 	}
 
 	private static void hi() throws IOException {
-		FileReader reader = new FileReader("foo.java");
-		reader.read();
-		reader.close();
+		try {
+			FileReader reader = new FileReader("foo.java");
+			reader.read();
+			reader.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
 	}
 
 }
