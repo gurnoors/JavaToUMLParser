@@ -10,6 +10,6 @@ Takes in Java Source code to generate UML Class Diagrams
 
 
 ## How to Run:
-```java -jar umlparser.hjar src/folder/path optional/output/path.png```
+```java -jar umlparser.jar src/folder/path optional/output/path.png```
 (You can find umlparser.jar in project directory or generate it again, with Main class being ```com.gurnoors.cmpe202.uml.classdia.Main``` )
 
