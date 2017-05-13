@@ -6,7 +6,7 @@ Takes in Java Source code to generate UML Class Diagrams
 
 ## Libraries Used:
 - [JavaParser](http://javaparser.org): Parses the spurce code to an abstract syntax tree. 
-- [PlantUML](plantuml.com/class-diagram): Generates UML diagrams from text containing class relationship information.
+- [PlantUML](http://plantuml.com/class-diagram): Generates UML diagrams from text containing class relationship information.
 
 
 ## How to Run:
