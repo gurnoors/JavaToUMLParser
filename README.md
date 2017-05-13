@@ -10,4 +10,4 @@ Takes in Java Source code to generate UML Class Diagrams
 
 
 ## How to Run:
-java -jar umlparser src/folder/path optional/output/path.png
+```java -jar umlparser src/folder/path optional/output/path.png```
